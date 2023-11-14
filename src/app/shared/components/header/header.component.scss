@@ -34,7 +34,9 @@
 
 
 .header-logo {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 40px;
   max-width: 220px;
   width: 100%;
@@ -42,6 +44,18 @@
     color: white;
     text-align: center;
     font-size: 25px;
+      img{
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+    }
+  }
+  .logo-text{
+    color: white;
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-en-primary;
   }
 
 }
@@ -79,7 +93,6 @@
 .icon-menu ul li {
   display: inline-block;
   margin-right: 18px;
-  display: flex;
   align-items: center;
   gap: 12px;
   cursor: pointer;
@@ -319,6 +332,11 @@
   }
   .header-logo {
     margin: 0;
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 24px;
+    }
   }
 }
 
